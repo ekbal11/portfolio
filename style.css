@@ -534,7 +534,7 @@ section .title::after{
     height: 300px;
     overflow: hidden;
 }
-.project .project-item a:link{
+.project .project-item a:visited{
     color: #fff;
     text-decoration: none;
     background-color: transparent;
