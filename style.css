@@ -1,4 +1,4 @@
-/*  import google fonts */
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
 
 *{
@@ -14,6 +14,7 @@ html{
 .title  span{
     color: crimson;
 }
+
 /* custom scroll bar */
 ::-webkit-scrollbar {
     width: 10px;
@@ -499,7 +500,7 @@ section .title::after{
 
 }
 .project .project-info{
-    padding: 30px;
+    padding: 15px 30px;
     flex-basis: 50%;
     height: 100%;
     display: flex;
@@ -512,8 +513,9 @@ section .title::after{
 
 }
 .project .project-info h1{
-    font-size: 2rem;
+    font-size: 1.8rem;
     font-weight: 500;
+    line-height: 2.5rem;
     color: crimson;
 }
 .project .project-info h2{
@@ -531,6 +533,11 @@ section .title::after{
     flex-basis: 50%;
     height: 300px;
     overflow: hidden;
+}
+.project .project-item a:link{
+    color: #fff;
+    text-decoration: none;
+    background-color: transparent;
 }
 .project .project-img::after{
     content: '';
@@ -629,7 +636,7 @@ box-shadow: 0 0 5px 0 0000002c;
 
 
 /* responsive media query start */
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 990px) {
     .project .project-item{
         flex-direction: row;
     }
@@ -652,7 +659,26 @@ box-shadow: 0 0 5px 0 0000002c;
 
 }
   
- 
+@media (max-width: 1500px){
+    .project .project-info h1{
+        font-size: 1.8rem;
+        font-weight: 400;
+        line-height: 2.3rem;
+        color: crimson;
+    }
+
+    .project .project-info h2{
+        font-size: 1rem;
+        font-weight: 300;
+        margin-top: 8px;
+    }
+    .project .project-info p{
+        margin-top: 2px;
+        line-height: 1.3rem;
+       
+        
+    }
+}
 
 
 @media (max-width: 1104px) {
@@ -660,12 +686,52 @@ box-shadow: 0 0 5px 0 0000002c;
         height: 350px;
         width: 350px;
     }
+
+    .project .project-info h1{
+        font-size: 1.5rem;
+        font-weight: 400;
+        line-height: 2.3rem;
+        color: crimson;
+    }
+
+    .project .project-info h2{
+        font-size: 1rem;
+        font-weight: 300;
+        margin-top: 8px;
+    }
+    .project .project-info p{
+        margin-top: 2px;
+        line-height: 1.2rem;
+       
+        
+    }
+
     
 }
 
+
 @media (max-width: 991px) {
     .max-width{
-        padding: 0 50px;
+        padding: 0 30px;
+    }
+    
+    .project .project-info h1{
+        font-size: 1.2rem;
+        font-weight: 400;
+        line-height: 2.3rem;
+        color: crimson;
+    }
+
+    .project .project-info h2{
+        font-size: 1rem;
+        font-weight: 300;
+        margin-top: 8px;
+    }
+    .project .project-info p{
+        margin-top: 2px;
+        line-height: 1.2rem;
+       
+        
     }
   
     
@@ -739,7 +805,7 @@ box-shadow: 0 0 5px 0 0000002c;
 
 @media (max-width: 690px) {
     .max-width{
-        padding: 0 23px;
+        padding: 0 20px;
     }
     .home .home-content .text-2{
         font-size: 32px;
